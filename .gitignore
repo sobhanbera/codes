@@ -1,0 +1,13 @@
+*
+
+!.git
+!sb
+!.clang-format
+!.gitignore
+# !*.c
+!*.cpp
+!*.java
+# !*.python
+# !*.js
+
+GitIgnore
