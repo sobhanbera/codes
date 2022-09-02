@@ -1,6 +1,6 @@
 /*\
 |*| @coder     : sobhan-bera
-|*| @code_time : 2022-08-03 18:18:34
+|*| @code_time : 2022-09-01 18:24:31
 |*| @github    : https://github.com/sobhanbera
 \*/
 #include <bits/stdc++.h>
@@ -17,16 +17,31 @@ using namespace std;
 #endif
 
 void solution(int _time) {
-  int a;
-  cin >> a;
-  cout << a;
+  int n;
+  cin >> n;
+  int unique[105] = {0};
+  int arr[n];
+  FOR(i, 0, n - 1) {
+    cin >> arr[i];
+    unique[arr[i]]++;
+  }
+  FOR(i, 0, 100) {
+    if (unique[i] == 1) {
+      FOR(j, 0, n - 1) {
+        if (arr[j] == i) {
+          cout << j + 1;
+          return;
+        }
+      }
+    }
+  }
 }
 
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
   int t = 1;
-  // cin >> t;
+  cin >> t;
   for (int time = 1; time <= t; ++time) {
     solution(time);
     cout << '\n';

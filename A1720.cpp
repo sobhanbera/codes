@@ -1,6 +1,6 @@
 /*\
 |*| @coder     : sobhan-bera
-|*| @code_time : 2022-08-03 18:18:34
+|*| @code_time : 2022-09-02 16:51:01
 |*| @github    : https://github.com/sobhanbera
 \*/
 #include <bits/stdc++.h>
@@ -17,16 +17,23 @@ using namespace std;
 #endif
 
 void solution(int _time) {
-  int a;
-  cin >> a;
-  cout << a;
+  long long a, b, c, d;
+  cin >> a >> b >> c >> d;
+  long long x = a * d, y = b * c;
+  if (x == y)
+    cout << 0;
+  else if ((y != 0 && x % y == 0) || (x != 0 && y % x == 0)) {
+    cout << 1;
+  } else {
+    cout << 2;
+  }
 }
 
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
   int t = 1;
-  // cin >> t;
+  cin >> t;
   for (int time = 1; time <= t; ++time) {
     solution(time);
     cout << '\n';

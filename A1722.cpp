@@ -1,6 +1,6 @@
 /*\
 |*| @coder     : sobhan-bera
-|*| @code_time : 2022-08-03 18:18:34
+|*| @code_time : 2022-08-30 20:47:41
 |*| @github    : https://github.com/sobhanbera
 \*/
 #include <bits/stdc++.h>
@@ -15,18 +15,27 @@ using namespace std;
 #else
 #define dbg(...) 1
 #endif
+#define strend string::npos
 
 void solution(int _time) {
-  int a;
-  cin >> a;
-  cout << a;
+  int n;
+  cin >> n;
+  string s;
+  cin >> s;
+  if (n == 5 && (int)s.find('T') != string::npos &&
+      (int)s.find('i') != string::npos && (int)s.find('m') != string::npos &&
+      (int)s.find('u') != string::npos && (int)s.find('r') != string::npos) {
+    cout << "YES" << endl;
+  } else {
+    cout << "NO" << endl;
+  }
 }
 
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
   int t = 1;
-  // cin >> t;
+  cin >> t;
   for (int time = 1; time <= t; ++time) {
     solution(time);
     cout << '\n';

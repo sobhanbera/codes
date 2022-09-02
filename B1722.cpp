@@ -1,6 +1,6 @@
 /*\
 |*| @coder     : sobhan-bera
-|*| @code_time : 2022-08-03 18:18:34
+|*| @code_time : 2022-08-30 21:57:57
 |*| @github    : https://github.com/sobhanbera
 \*/
 #include <bits/stdc++.h>
@@ -17,16 +17,25 @@ using namespace std;
 #endif
 
 void solution(int _time) {
-  int a;
-  cin >> a;
-  cout << a;
+  int c;
+  cin >> c;
+  string a, b;
+  cin >> a >> b;
+  FOR(i, 0, c - 1) {
+    if ((a[i] == 'R' && (b[i] == 'B' || b[i] == 'G')) ||
+        (b[i] == 'R' && (a[i] == 'B' || a[i] == 'G'))) {
+      cout << "NO\n";
+      return;
+    }
+  }
+  cout << "YES\n";
 }
 
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
   int t = 1;
-  // cin >> t;
+  cin >> t;
   for (int time = 1; time <= t; ++time) {
     solution(time);
     cout << '\n';

@@ -1,6 +1,6 @@
 /*\
 |*| @coder     : sobhan-bera
-|*| @code_time : 2022-08-03 18:18:34
+|*| @code_time : 2022-08-30 22:10:55
 |*| @github    : https://github.com/sobhanbera
 \*/
 #include <bits/stdc++.h>
@@ -17,16 +17,14 @@ using namespace std;
 #endif
 
 void solution(int _time) {
-  int a;
-  cin >> a;
-  cout << a;
+
 }
 
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
   int t = 1;
-  // cin >> t;
+  cin >> t;
   for (int time = 1; time <= t; ++time) {
     solution(time);
     cout << '\n';

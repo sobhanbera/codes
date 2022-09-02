@@ -1,6 +1,6 @@
 /*\
 |*| @coder     : sobhan-bera
-|*| @code_time : 2022-08-03 18:18:34
+|*| @code_time : 2022-09-02 01:39:04
 |*| @github    : https://github.com/sobhanbera
 \*/
 #include <bits/stdc++.h>
@@ -16,10 +16,19 @@ using namespace std;
 #define dbg(...) 1
 #endif
 
+string q = "qwertyuiopasdfghjkl;zxcvbnm,./";
 void solution(int _time) {
-  int a;
-  cin >> a;
-  cout << a;
+  char dir;
+  cin >> dir;
+  string in;
+  cin >> in;
+  FOR(i, 0, (int)in.length() - 1) {
+    if (dir == 'R') {
+      cout << q[q.find(in[i]) - 1];
+    } else {
+      cout << q[q.find(in[i]) + 1];
+    }
+  }
 }
 
 int main() {
