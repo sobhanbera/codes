@@ -1,14 +1,35 @@
 *
+*/*/*
+sb/*
+
+# *.class
+# *.out
+# *.txt
+# *.jar
+
+# !*.*
 
 !.git
 !sb
 !.clang-format
 !.gitignore
+
+!sb/*
+
 # !*.c
 !*.cpp
 !*.java
-# !*.python
-# !*.js
-!sb/*
+*.js
+*.py
+
+!*/**.cpp
+!*/**.java
+!*/**.js
+!*/**.py
+!*/**.pyc
 
 GitIgnore
+ignore
+
+.DS_Store
+*/.DS_Store
