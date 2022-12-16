@@ -128,13 +128,14 @@ template<class A> void print(vector<A>& a) {
 }
 
 void solution(int time) {
-	int d, n;
-	read(d, n);
-	string res = to_string(n);
-	FOR(i, 0, d) {
-		res += "00";
-	}
-	println(res);
+	// int d, n;
+	// read(d, n);
+	// string res = to_string(n);
+	// FOR(i, 0, d) {
+	// 	res += "00";
+	// }
+	// println(res);
+	cout << "JE";
 }
 
 int main() {
